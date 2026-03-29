@@ -77,17 +77,50 @@
         </div>
     </section>
 
+    <section id="add-money" class="w-11/12 mx-auto mb-3">
+        <h2 class="text-2xl font-bold mb-5">Add Money</h2>
+        <div class="card bg-base-100 w-full shadow rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-bold">Select A Bank</label>
+                    <select class="select text-neutral/50 bg-base-200 rounded-full w-full">
+                        <option disabled selected class="text-neutral/50 bg-base-200">Select Bank</option>
+                        <option>Islami Bank Bangladesh Limited(IBBL)</option>
+                        <option>Dutch-Bangla Bank Limited(DBBL)</option>
+                        <option>City Bank</option>
+                        <option>BRAC Bank</option>
+                    </select>
+                    <label class="label text-neutral font-bold">Bank Account Number</label>
+                    <input id="mobile-number" type="text" class="input rounded-full bg-base-200"
+                        placeholder="Enter 11 digit account number" maxlength="11" />
+                    <label class="label text-neutral font-bold">Amount to Add</label>
+                    <input id="amount" type="number" class="input rounded-full bg-base-200"
+                        placeholder="Enter amount to add" />
+                    <label class="label text-neutral font-bold">Pin Number</label>
+                    <input id="input-pin" type="password" class="input rounded-full bg-base-200"
+                        placeholder="Enter your 4-digit pin" maxlength="4" />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+
     <section id="cashout" class="w-11/12 mx-auto">
         <h2 class="text-2xl font-bold mb-5">Cash Out</h2>
         <div class="card bg-base-100 w-full shadow rounded-2xl">
             <div class="card-body">
                 <fieldset class="fieldset">
                     <label class="label text-neutral font-bold">Agent Number</label>
-                    <input  id="mobile-number" type="text" class="input rounded-full bg-base-200" placeholder="Enter 11 digit number" maxlength="11" />
+                    <input id="mobile-number" type="text" class="input rounded-full bg-base-200"
+                        placeholder="Enter 11 digit number" maxlength="11" />
                     <label class="label text-neutral font-bold">Amount</label>
-                    <input  id="amount" type="number" class="input rounded-full bg-base-200" placeholder="Enter amount to withdraw" />
+                    <input id="amount" type="number" class="input rounded-full bg-base-200"
+                        placeholder="Enter amount to withdraw" />
                     <label class="label text-neutral font-bold">Pin Number</label>
-                    <input  id="input-pin" type="password" class="input rounded-full bg-base-200" placeholder="Enter your 4-digit pin" maxlength="4" />
+                    <input id="input-pin" type="password" class="input rounded-full bg-base-200"
+                        placeholder="Enter your 4-digit pin" maxlength="4" />
                     <div><a class="link link-hover">Forgot password?</a></div>
                     <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
                 </fieldset>
