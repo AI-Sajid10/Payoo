@@ -128,9 +128,46 @@
         </div>
     </section>
 
+    <section id="send_money" class="w-11/12 mx-auto mt-3">
+        <h2 class="text-2xl font-bold mb-5">Transfer Money</h2>
+        <div class="card bg-base-100 w-full shadow rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-bold">User Account Number</label>
+                    <input id="user-mobile-number" type="text" class="input rounded-full bg-base-200"
+                        placeholder="Enter 11 digit number" maxlength="11" />
+                    <label class="label text-neutral font-bold">Amount</label>
+                    <input id="transfer-amount" type="number" class="input rounded-full bg-base-200"
+                        placeholder="Enter amount to transfer" />
+                    <label class="label text-neutral font-bold">Pin Number</label>
+                    <input id="input-pin" type="password" class="input rounded-full bg-base-200"
+                        placeholder="Enter your 4-digit pin" maxlength="4" />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button id="send-money-btn" class="btn btn-primary mt-4 rounded-full">Send Now</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <section id="bonous" class="w-11/12 mx-auto mt-3">
+        <h2 class="text-2xl font-bold mb-5">Get Bonous</h2>
+        <div class="card bg-base-100 w-full shadow rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-bold">Enter Bonous Cupon</label>
+                    <input id="cupon-number" type="text" class="input rounded-full bg-base-200"
+                        placeholder="Enter your cupon" />
+                    <button id="bonous-btn" class="btn btn-primary mt-4 rounded-full">Get Bonous</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
 
     <script src="script/home.js"></script>
-    <script src = "script/addmoney.js"></script>
+    <script src="script/addmoney.js"></script>
+    <script src="script/send_money.js"></script>
+    <script src="script/bonous.js"></script>
 </body>
 
 </html>
