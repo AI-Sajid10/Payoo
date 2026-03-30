@@ -83,7 +83,7 @@
             <div class="card-body">
                 <fieldset class="fieldset">
                     <label class="label text-neutral font-bold">Select A Bank</label>
-                    <select class="select text-neutral/50 bg-base-200 rounded-full w-full">
+                    <select id="bank-select" class="select text-neutral/50 bg-base-200 rounded-full w-full">
                         <option disabled selected class="text-neutral/50 bg-base-200">Select Bank</option>
                         <option>Islami Bank Bangladesh Limited(IBBL)</option>
                         <option>Dutch-Bangla Bank Limited(DBBL)</option>
@@ -91,10 +91,10 @@
                         <option>BRAC Bank</option>
                     </select>
                     <label class="label text-neutral font-bold">Bank Account Number</label>
-                    <input id="mobile-number" type="text" class="input rounded-full bg-base-200"
+                    <input id="acc-number" type="text" class="input rounded-full bg-base-200"
                         placeholder="Enter 11 digit account number" maxlength="11" />
                     <label class="label text-neutral font-bold">Amount to Add</label>
-                    <input id="amount" type="number" class="input rounded-full bg-base-200"
+                    <input id="add_amount" type="number" class="input rounded-full bg-base-200"
                         placeholder="Enter amount to add" />
                     <label class="label text-neutral font-bold">Pin Number</label>
                     <input id="input-pin" type="password" class="input rounded-full bg-base-200"
@@ -130,7 +130,7 @@
 
 
     <script src="script/home.js"></script>
-
+    <script src = "script/addmoney.js"></script>
 </body>
 
 </html>
