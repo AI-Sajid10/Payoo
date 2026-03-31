@@ -163,11 +163,41 @@
         </div>
     </section>
 
+    <section id="pay-bill" class="w-11/12 mx-auto mt-3">
+        <h2 class="text-2xl font-bold mb-5">Pay Bill</h2>
+        <div class="card bg-base-100 w-full shadow rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-bold">Select To Pay</label>
+                    <select id="bank-select" class="select text-neutral/50 bg-base-200 rounded-full w-full">
+                        <option disabled selected class="text-neutral/50 bg-base-200">Select for pay</option>
+                        <option>Electricity Bill</option>
+                        <option>Gas Bill</option>
+                        <option>Water Bill</option>
+                        <option>Wifi Bill</option>
+                    </select>
+                    <label class="label text-neutral font-bold">Biller Account Number</label>
+                    <input id="pay-bill-number" type="text" class="input rounded-full bg-base-200"
+                        placeholder="Enter account number" maxlength="11" />
+                    <label class="label text-neutral font-bold">Amount to Pay</label>
+                    <input id="pay_amount" type="number" class="input rounded-full bg-base-200"
+                        placeholder="Add Amount to pay" />
+                    <label class="label text-neutral font-bold">Pin Number</label>
+                    <input id="input-pin" type="password" class="input rounded-full bg-base-200"
+                        placeholder="Enter your 4-digit pin" maxlength="4" />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
 
     <script src="script/home.js"></script>
     <script src="script/addmoney.js"></script>
     <script src="script/send_money.js"></script>
     <script src="script/bonous.js"></script>
+    <script src="script/pay_bill.js"></script>
 </body>
 
 </html>
